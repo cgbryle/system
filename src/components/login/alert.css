@@ -1,31 +1,84 @@
+/* Styles for the alert container */
 .alert-container {
-  width: 400px;
-  margin: 20px auto;
+  width: 60%;
+  margin: auto;
   padding: 20px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
 }
 
+/* Styles for the notification list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Styles for each notification item */
+li {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+/* Style for read notifications */
+.read {
+  opacity: 0.6;
+}
+
+/* Style for unread notifications */
+.unread {
+  font-weight: bold;
+}
+
+/* Button styled exactly like 'Details' */
+button {
+  padding: 10px 20px;  /* Adjust padding to match 'Details' button */
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #1e293b; /* Dark blue like the 'Details' button */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Match the 'Details' button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-button {
+  padding: 6px 12px; /* Make it smaller */
+  font-size: 13px; /* Adjust font size */
+  font-weight: bold;
+  background: #00ff00; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  width: auto; /* Prevent stretching */
+  min-width: 70px; /* Small fixed width */
+  display: inline-block; /* Prevent full-width stretching */
+}
+
+.view-button:hover {
+  background: #5bea76; /* Slightly darker green on hover */
+}
+
+/* Make sure the button aligns to the right */
 .notification-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background: white;
-  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
-.view-button {
-  padding: 5px 10px;
-  background: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
 .read {
   background: #e0e0e0;
