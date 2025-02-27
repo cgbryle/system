@@ -56,7 +56,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/alerts" className="emergency-button">
+          <Link to="/alert" className="emergency-button">
             <FaBell /> Alerts ({notifications.length})
           </Link>
         </li>
