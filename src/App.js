@@ -74,7 +74,6 @@ function App() {
           }
         />
 
-        {/* Logout route (optional) */}
         <Route
           path="/logout"
           element={
