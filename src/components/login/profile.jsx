@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './rofile.css'; // Import the CSS file
+import './profile.css'; // Import the CSS file
 
 const Profile = () => {
   // State to manage form inputs
